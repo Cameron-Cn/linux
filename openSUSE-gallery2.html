@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  vertical-align: middle;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+</style>
+<body>
+
+<h2 style="text-align:center">openSUSE Tumbleweed Screenshots</h2>
+<h3 style="text-align:center">KDE Plasma 5.21, Theme: Gruvbox</h3>
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 12</div>
+  <img src="https://andmorewords.com/storage/app/media/openSUSE/openSUSE-tumbleweed_1.png" style="width:100%">
+  <div class="text">KDE Plasma DE on openSUSE Tumbleweed</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 12</div>
+  <img src="https://andmorewords.com/storage/app/media/openSUSE/openSUSE-tumbleweed_2.png" style="width:100%">
+  <div class="text">Event Calendar widget</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 12</div>
+  <img src="https://andmorewords.com/storage/app/media/openSUSE/openSUSE-tumbleweed_3.png" style="width:100%">
+  <div class="text">Yakuake</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">4 / 12</div>
+  <img src="https://andmorewords.com/storage/app/media/openSUSE/openSUSE-tumbleweed_4.png" style="width:100%">
+  <div class="text">Fullscreen Launcher</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">5 / 12</div>
+  <img src="https://andmorewords.com/storage/app/media/openSUSE/openSUSE-tumbleweed_5.png" style="width:100%">
+  <div class="text">Thunderbird Compose email</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">6 / 12</div>
+  <img src="https://andmorewords.com/storage/app/media/openSUSE/openSUSE-tumbleweed_6.png" style="width:100%">
+  <div class="text">Firefox</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">7 / 12</div>
+  <img src="https://andmorewords.com/storage/app/media/openSUSE/openSUSE-tumbleweed_7.png" style="width:100%">
+  <div class="text">KDE File Browser Dolphin</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">8 / 12</div>
+  <img src="https://andmorewords.com/storage/app/media/openSUSE/openSUSE-tumbleweed_8.png" style="width:100%">
+  <div class="text">Dolphin in split-view</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">9 / 12</div>
+  <img src="https://andmorewords.com/storage/app/media/openSUSE/openSUSE-tumbleweed_9.png" style="width:100%">
+  <div class="text">System Settings</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">10 / 12</div>
+  <img src="https://andmorewords.com/storage/app/media/openSUSE/openSUSE-tumbleweed_10.png" style="width:100%">
+  <div class="text">System Information</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">11 / 12</div>
+  <img src="https://andmorewords.com/storage/app/media/openSUSE/openSUSE-tumbleweed_11.png" style="width:100%">
+  <div class="text">KDE Plasma 5.21 System Monitor</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">12 / 12</div>
+  <img src="https://andmorewords.com/storage/app/media/openSUSE/openSUSE-tumbleweed_12.png" style="width:100%">
+  <div class="text">YaST System Management</div>
+</div>
+
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="https://andmorewords.com/storage/app/media/openSUSE/openSUSE-tumbleweed_1.png" style="width:100%" onclick="currentSlide(1)" alt="Plasma is my favorite desktop environment, for how flexible and robust it is. Here with Gruvbox Theme.">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="https://andmorewords.com/storage/app/media/openSUSE/openSUSE-tumbleweed_2.png" style="width:100%" onclick="currentSlide(2)" alt="Transparency effects with Event Calendar Widget. The level of transparency, as well as the 'graniness' can be adjusted through GUI-settings.">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="https://andmorewords.com/storage/app/media/openSUSE/openSUSE-tumbleweed_3.png" style="width:100%" onclick="currentSlide(3)" alt="Yakuake (F12) gives easy terminal access on a whim, which I love&mdash;bash is never more than a keystroke away.">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="https://andmorewords.com/storage/app/media/openSUSE/openSUSE-tumbleweed_4.png" style="width:100%" onclick="currentSlide(4)" alt="The Meta (Windows) key showing fullscreen launcher. I prefer this to the drop-down, Windows-style menu.">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="https://andmorewords.com/storage/app/media/openSUSE/openSUSE-tumbleweed_5.png" style="width:100%" onclick="currentSlide(5)" alt="A simple addon (Pywalfox) allows Thunderbird to match the wallpaper and OS colorscheme.">
+    </div>    
+    <div class="column">
+      <img class="demo cursor" src="https://andmorewords.com/storage/app/media/openSUSE/openSUSE-tumbleweed_6.png" style="width:100%" onclick="currentSlide(6)" alt="...likewise for Firefox. Homepage is Tabliss, with Tree Style Tabs and custom CSS.">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="https://andmorewords.com/storage/app/media/openSUSE/openSUSE-tumbleweed_7.png" style="width:100%" onclick="currentSlide(2)" alt="Dolphin is KDE's file browser, again the interface is customizable, and I love how well integrated colorschemes are. With one click in settings, (almost) everything changes together!">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="https://andmorewords.com/storage/app/media/openSUSE/openSUSE-tumbleweed_8.png" style="width:100%" onclick="currentSlide(2)" alt="With a great option to split views, allowing easy click-and-drag between different directories from one window.">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="https://andmorewords.com/storage/app/media/openSUSE/openSUSE-tumbleweed_9.png" style="width:100%" onclick="currentSlide(2)" alt="Settings are all in one place (no Control Panel, settings, driver tab madness).">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="https://andmorewords.com/storage/app/media/openSUSE/openSUSE-tumbleweed_10.png" style="width:100%" onclick="currentSlide(2)" alt="System information showing RAM, CPU, etc. Tumbleweed operates on snapshots, so this snapshot is from 2020-02-23">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="https://andmorewords.com/storage/app/media/openSUSE/openSUSE-tumbleweed_11.png" style="width:100%" onclick="currentSlide(2)" alt="System Monitor shows all the useful information in one place, and is entirely customizable.">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="https://andmorewords.com/storage/app/media/openSUSE/openSUSE-tumbleweed_12.png" style="width:100%" onclick="currentSlide(2)" alt="YaST is openSUSE's administration GUI that allows full system management (not desktop) from a single interface.">
+    </div>
+  </div>
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+    
+</body>
+</html>
